@@ -23,14 +23,13 @@ SRC_DIR = src
 BUILD_DIR = build
 
 # Source files
-SOURCES = $(SRC_DIR)/main.c
+SOURCES = $(SRC_DIR)/main.c \
 
 # Executable name
-TARGET = quickfall$(TARGET_EXTENSION)
+TARGET = lightstrike$(TARGET_EXTENSION)
 
 # Default target
 all: check_commands $(TARGET)
-bench: check_commands $(BENCH_TARGET)
 
 OBJECTS = $(SOURCES:%.c=$(BUILD_DIR)/%.o)
 
